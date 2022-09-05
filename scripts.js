@@ -1,7 +1,7 @@
 // Here's where all the teams go
 
 // Alabama Crimson Tide
-let alabamaRanking = 1
+let alabamaRanking = db.mongodbVSCodePlaygroundDB.sales.findOne({_id: '1'}, {item: 'Alabama Crimson Tide'}).distinct('rank')
 let alabamaScores = [55]
 let alabamaOpponentScores = [0]
 let alabamaSoS = 1
